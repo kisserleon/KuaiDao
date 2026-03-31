@@ -55,36 +55,36 @@ function search(query: string): SearchResult[] {
 
 describe("search functionality", () => {
   it("finds restaurants by Chinese name", () => {
-    const results = search("蜀园");
+    const results = search("川菜馆");
     expect(results.length).toBe(1);
     expect(results[0].type).toBe("restaurant");
   });
 
   it("finds restaurants by English name", () => {
-    const results = search("Sichuan");
+    const results = search("Hang Dai");
     expect(results.length).toBeGreaterThanOrEqual(1);
     expect(results[0].type).toBe("restaurant");
   });
 
   it("finds groceries by name", () => {
-    const results = search("99 Ranch");
-    expect(results.length).toBe(1);
+    const results = search("Asia Market");
+    expect(results.length).toBeGreaterThanOrEqual(1);
     expect(results[0].type).toBe("grocery");
   });
 
   it("finds by address content", () => {
-    const results = search("Bellevue");
+    const results = search("Dublin");
     expect(results.length).toBeGreaterThan(0);
   });
 
   it("finds services by Chinese name", () => {
-    const results = search("陈大卫");
+    const results = search("汉龙");
     expect(results.length).toBe(1);
     expect(results[0].type).toBe("service");
   });
 
   it("finds events by title", () => {
-    const results = search("春节");
+    const results = search("农历新年");
     expect(results.length).toBeGreaterThanOrEqual(1);
     expect(results[0].type).toBe("event");
   });

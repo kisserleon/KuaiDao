@@ -28,37 +28,37 @@ function GuideContent() {
       key: "essentials",
       icon: FileText,
       color: "red",
-      items: ["SSN申请", "州ID/驾照", "银行开户", "手机卡", "租房"],
+      items: ["PPS Number申请", "IRP居留许可", "银行开户", "手机卡办理", "租房"],
     },
     {
       key: "housing",
       icon: Home,
       color: "blue",
-      items: ["租房网站推荐", "租房合同须知", "押金与信用检查", "买房流程"],
+      items: ["Daft.ie租房", "租房合同须知", "押金与RTB注册", "HAP住房补贴"],
     },
     {
       key: "banking",
       icon: Landmark,
       color: "green",
-      items: ["主流银行对比", "信用卡推荐", "信用分建设", "转账与汇款"],
+      items: ["AIB/BOI/Revolut对比", "IBAN账户", "信用记录建设", "国际汇款"],
     },
     {
       key: "driving",
       icon: Car,
       color: "orange",
-      items: ["笔试准备", "路考技巧", "保险选择", "买车指南"],
+      items: ["驾照理论考试", "路考技巧", "NCT车检", "保险选择"],
     },
     {
       key: "healthcare",
       icon: HeartPulse,
       color: "pink",
-      items: ["医疗保险类型", "看病流程", "中文诊所推荐", "急诊须知"],
+      items: ["GP注册", "医疗卡申请", "公立/私立医院", "急诊流程"],
     },
     {
       key: "education",
       icon: GraduationCap,
       color: "purple",
-      items: ["公立学校入学", "中文学校", "课后班推荐", "大学申请"],
+      items: ["公立学校入学", "都柏林中文学校", "CAO大学申请", "语言课程"],
     },
   ];
 

@@ -34,8 +34,8 @@ const allMarkers = [
   })),
 ];
 
-// Center on Seattle/Bellevue area
-const center: [number, number] = [47.62, -122.20];
+// Center on Dublin city
+const center: [number, number] = [53.345, -6.265];
 
 export default function FullMap() {
   return (
