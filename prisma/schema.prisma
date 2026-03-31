@@ -28,3 +28,43 @@ model Review {
 
   @@index([targetType, targetId])
 }
+
+model FetchedListing {
+  id          String   @id @default(cuid())
+  source      String   // "google" | "rednote"
+  sourceId    String   // external ID for dedup
+  type        String   // "restaurant" | "grocery" | "service" | "event"
+  name        String
+  nameZh      String   @default("")
+  description String   @default("")
+  address     String   @default("")
+  city        String   @default("")
+  phone       String   @default("")
+  rating      Float    @default(0)
+  reviewCount Int      @default(0)
+  priceLevel  Int      @default(0)
+  lat         Float    @default(0)
+  lng         Float    @default(0)
+  categories  String   @default("") // comma-separated
+  imageUrl    String   @default("")
+  sourceUrl   String   @default("")
+  rawData     String   @default("") // full JSON from API
+  status      String   @default("pending") // "pending" | "approved" | "rejected"
+  fetchedAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([source, sourceId])
+  @@index([source, type])
+  @@index([status])
+}
+
+model FetchLog {
+  id        String   @id @default(cuid())
+  source    String
+  type      String
+  status    String   // "success" | "error"
+  count     Int      @default(0)
+  message   String   @default("")
+  duration  Int      @default(0) // ms
+  createdAt DateTime @default(now())
+}

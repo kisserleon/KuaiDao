@@ -1,0 +1,61 @@
+{
+  "location": {
+    "city": "Dublin",
+    "country": "Ireland",
+    "lat": 53.3498,
+    "lng": -6.2603,
+    "radiusMeters": 15000
+  },
+  "schedule": {
+    "enabled": true,
+    "cron": "0 3 * * 1",
+    "timezone": "Europe/Dublin"
+  },
+  "sources": {
+    "google": {
+      "enabled": true,
+      "schedule": "0 3 * * 1",
+      "queries": {
+        "restaurant": [
+          "Chinese restaurant",
+          "Sichuan restaurant",
+          "Cantonese restaurant",
+          "dim sum",
+          "Chinese noodles",
+          "Chinese hotpot",
+          "bubble tea boba",
+          "Asian fusion restaurant"
+        ],
+        "grocery": [
+          "Asian supermarket",
+          "Chinese grocery store",
+          "Asian food market",
+          "Oriental grocery"
+        ],
+        "service": [
+          "Chinese speaking solicitor lawyer",
+          "Chinese speaking accountant",
+          "Chinese speaking doctor GP",
+          "Chinese translation service",
+          "immigration solicitor Chinese"
+        ]
+      },
+      "maxResultsPerQuery": 20
+    },
+    "rednote": {
+      "enabled": true,
+      "schedule": "0 4 * * 1",
+      "queries": [
+        "都柏林中餐推荐",
+        "Dublin 中餐厅",
+        "爱尔兰华人美食",
+        "都柏林亚洲超市",
+        "Dublin 华人服务",
+        "都柏林生活攻略"
+      ],
+      "maxResultsPerQuery": 10
+    }
+  },
+  "autoApprove": false,
+  "notifyOnFetch": true
+}
