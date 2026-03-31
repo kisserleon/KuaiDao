@@ -1,0 +1,121 @@
+{
+  "common": {
+    "appName": "筷道",
+    "appTagline": "发现你身边的中华味道",
+    "search": "搜索",
+    "searchPlaceholder": "搜索餐厅、超市、服务...",
+    "viewAll": "查看全部",
+    "learnMore": "了解更多",
+    "back": "返回",
+    "loading": "加载中...",
+    "noResults": "暂无结果",
+    "rating": "评分",
+    "reviews": "条评价",
+    "address": "地址",
+    "phone": "电话",
+    "hours": "营业时间",
+    "free": "免费",
+    "switchLang": "EN",
+    "results": "条结果",
+    "sortBy": "排序"
+  },
+  "nav": {
+    "home": "首页",
+    "restaurants": "美食",
+    "groceries": "超市",
+    "services": "服务",
+    "events": "活动",
+    "guide": "新人指南"
+  },
+  "home": {
+    "hero": {
+      "title": "筷道 KuaiDao",
+      "subtitle": "发现你身边的中华味道",
+      "description": "一站式本地华人生活信息平台——美食、超市、服务、社区活动，尽在筷道。"
+    },
+    "featured": {
+      "restaurants": "热门餐厅",
+      "groceries": "亚洲超市",
+      "services": "华人服务",
+      "events": "社区活动"
+    },
+    "stats": {
+      "restaurants": "中餐厅",
+      "groceries": "亚洲超市",
+      "services": "服务商家",
+      "events": "近期活动"
+    }
+  },
+  "restaurants": {
+    "title": "中餐厅",
+    "subtitle": "探索本地最佳中餐",
+    "filterByCuisine": "按菜系筛选",
+    "allCuisines": "全部菜系",
+    "sortBy": "排序方式",
+    "sortByRating": "评分最高",
+    "sortByReviews": "评价最多",
+    "sortByPrice": "价格",
+    "priceLevel": "人均消费"
+  },
+  "groceries": {
+    "title": "亚洲超市",
+    "subtitle": "找到你需要的食材和家乡味",
+    "types": {
+      "all": "全部",
+      "supermarket": "大型超市",
+      "specialty": "特色食材",
+      "bakery": "中式糕点",
+      "butcher": "肉铺"
+    }
+  },
+  "services": {
+    "title": "华人服务",
+    "subtitle": "找到说中文的专业服务",
+    "categories": {
+      "all": "全部",
+      "accountant": "会计师",
+      "lawyer": "律师",
+      "realtor": "房产经纪",
+      "tutor": "家教",
+      "doctor": "医生",
+      "insurance": "保险",
+      "immigration": "移民",
+      "translation": "翻译",
+      "other": "其他"
+    }
+  },
+  "events": {
+    "title": "社区活动",
+    "subtitle": "参与本地华人社区活动",
+    "upcoming": "即将开始",
+    "categories": {
+      "all": "全部",
+      "festival": "节日庆典",
+      "community": "社区聚会",
+      "workshop": "讲座工坊",
+      "food": "美食活动",
+      "culture": "文化艺术",
+      "other": "其他"
+    }
+  },
+  "guide": {
+    "title": "新人指南",
+    "subtitle": "初来乍到？这里有你需要的一切信息",
+    "sections": {
+      "essentials": "必备事项",
+      "housing": "租房买房",
+      "banking": "银行开户",
+      "driving": "驾照考试",
+      "healthcare": "医疗保险",
+      "education": "子女教育"
+    }
+  },
+  "footer": {
+    "about": "关于筷道",
+    "aboutText": "筷道是一个本地华人生活信息聚合平台，致力于帮助华人社区发现和分享本地资源。",
+    "quickLinks": "快速链接",
+    "contact": "联系我们",
+    "followUs": "关注我们",
+    "copyright": "© 2026 筷道 KuaiDao. 保留所有权利。"
+  }
+}

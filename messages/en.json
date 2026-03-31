@@ -1,0 +1,121 @@
+{
+  "common": {
+    "appName": "KuaiDao",
+    "appTagline": "Discover Chinese flavors near you",
+    "search": "Search",
+    "searchPlaceholder": "Search restaurants, groceries, services...",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "back": "Back",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "rating": "Rating",
+    "reviews": "reviews",
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Hours",
+    "free": "Free",
+    "switchLang": "中文",
+    "results": "results",
+    "sortBy": "Sort By"
+  },
+  "nav": {
+    "home": "Home",
+    "restaurants": "Food",
+    "groceries": "Groceries",
+    "services": "Services",
+    "events": "Events",
+    "guide": "Guide"
+  },
+  "home": {
+    "hero": {
+      "title": "筷道 KuaiDao",
+      "subtitle": "Discover Chinese Flavors Near You",
+      "description": "Your one-stop platform for local Chinese community — restaurants, groceries, services, and events, all in one place."
+    },
+    "featured": {
+      "restaurants": "Popular Restaurants",
+      "groceries": "Asian Groceries",
+      "services": "Chinese Services",
+      "events": "Community Events"
+    },
+    "stats": {
+      "restaurants": "Restaurants",
+      "groceries": "Grocery Stores",
+      "services": "Service Providers",
+      "events": "Upcoming Events"
+    }
+  },
+  "restaurants": {
+    "title": "Chinese Restaurants",
+    "subtitle": "Explore the best Chinese dining near you",
+    "filterByCuisine": "Filter by Cuisine",
+    "allCuisines": "All Cuisines",
+    "sortBy": "Sort By",
+    "sortByRating": "Highest Rated",
+    "sortByReviews": "Most Reviewed",
+    "sortByPrice": "Price",
+    "priceLevel": "Price Level"
+  },
+  "groceries": {
+    "title": "Asian Groceries",
+    "subtitle": "Find the ingredients and flavors of home",
+    "types": {
+      "all": "All",
+      "supermarket": "Supermarkets",
+      "specialty": "Specialty Stores",
+      "bakery": "Chinese Bakeries",
+      "butcher": "Butcher Shops"
+    }
+  },
+  "services": {
+    "title": "Chinese Services",
+    "subtitle": "Find Chinese-speaking professionals",
+    "categories": {
+      "all": "All",
+      "accountant": "Accountants",
+      "lawyer": "Lawyers",
+      "realtor": "Realtors",
+      "tutor": "Tutors",
+      "doctor": "Doctors",
+      "insurance": "Insurance",
+      "immigration": "Immigration",
+      "translation": "Translation",
+      "other": "Other"
+    }
+  },
+  "events": {
+    "title": "Community Events",
+    "subtitle": "Join local Chinese community events",
+    "upcoming": "Upcoming",
+    "categories": {
+      "all": "All",
+      "festival": "Festivals",
+      "community": "Community Gatherings",
+      "workshop": "Workshops",
+      "food": "Food Events",
+      "culture": "Arts & Culture",
+      "other": "Other"
+    }
+  },
+  "guide": {
+    "title": "Newcomer Guide",
+    "subtitle": "New here? Everything you need to get started",
+    "sections": {
+      "essentials": "Essentials",
+      "housing": "Housing",
+      "banking": "Banking",
+      "driving": "Driver's License",
+      "healthcare": "Healthcare",
+      "education": "Education"
+    }
+  },
+  "footer": {
+    "about": "About KuaiDao",
+    "aboutText": "KuaiDao is a local Chinese community information platform, helping Chinese communities discover and share local resources.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "followUs": "Follow Us",
+    "copyright": "© 2026 筷道 KuaiDao. All rights reserved."
+  }
+}

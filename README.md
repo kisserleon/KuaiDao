@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 筷道 KuaiDao 🥢
+
+> **发现你身边的中华味道** — Discover Chinese Flavors Near You
+
+A bilingual (中文/English) local Chinese community information aggregation platform built with Next.js 16, featuring restaurants, grocery stores, service providers, community events, and a newcomer's guide.
+
+## Features
+
+- 🍜 **Restaurant Directory** — Browse by cuisine type (川菜, 粤菜, 火锅, etc.) with interactive filters and sorting
+- 🛒 **Asian Grocery Finder** — Find supermarkets, specialty stores, bakeries
+- 💼 **Service Providers** — Chinese-speaking accountants, lawyers, realtors, tutors
+- 🎉 **Community Events** — Festivals, workshops, cultural events
+- 📖 **Newcomer Guide** — Essentials for new arrivals (SSN, housing, banking, driving)
+- 🗺️ **Map View** — Interactive Leaflet map showing all listings
+- 🔍 **Global Search** — Search across all categories
+- 🌙 **Dark Mode** — Full dark/light theme support
+- 🌐 **Bilingual** — Toggle between 中文 and English
+- 🔐 **Auth** — User registration/login with NextAuth.js
+- ⭐ **Reviews** — Authenticated users can rate and review listings
+- 📱 **Responsive** — Mobile-first design
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **i18n:** next-intl (Chinese/English)
+- **Auth:** NextAuth.js v5
+- **Database:** Prisma + SQLite
+- **Maps:** React Leaflet (OpenStreetMap)
+- **Icons:** Lucide React
+- **Theme:** next-themes
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Set up database
+npx prisma generate
+npx prisma db push
+
+# Seed sample data (optional)
+npx tsx prisma/seed.ts
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — you'll be redirected to `/zh` (Chinese).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Demo login:** `demo@kuaidao.app` / `demo123`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── api/              # API routes (auth, reviews, register)
+│   └── [locale]/         # i18n routes (zh, en)
+│       ├── restaurants/  # Restaurant listing + [id] detail
+│       ├── groceries/    # Grocery store listing + [id] detail
+│       ├── services/     # Service provider listing + [id] detail
+│       ├── events/       # Community events
+│       ├── guide/        # Newcomer guide
+│       ├── map/          # Full-screen map view
+│       ├── search/       # Global search
+│       ├── login/        # Login page
+│       └── register/     # Registration page
+├── components/
+│   ├── layout/           # Navbar, Footer, ThemeProvider, AuthProvider
+│   ├── ui/               # SearchBar, ListingCard, ThemeToggle
+│   └── features/         # MiniMap, FullMap, ReviewSection
+├── data/                 # Mock data
+├── i18n/                 # Internationalization config
+├── lib/                  # Prisma client, auth config, utils
+└── types/                # TypeScript interfaces
+messages/
+├── zh.json               # Chinese translations
+└── en.json               # English translations
+prisma/
+├── schema.prisma         # Database schema (User, Review)
+└── seed.ts               # Seed script
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+vercel deploy
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Set environment variables: `DATABASE_URL`, `NEXTAUTH_SECRET`, `NEXTAUTH_URL`
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
