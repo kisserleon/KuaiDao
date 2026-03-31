@@ -24,33 +24,13 @@ function buildQuery(type: string, lat: number, lng: number, radius: number): str
 
   switch (type) {
     case "restaurant":
-      return `[out:json][timeout:30];
-(
-  node["amenity"="restaurant"]["cuisine"~"chinese|asian|sichuan|cantonese|japanese|korean|vietnamese|thai|noodle|dumpling",i]${area};
-  way["amenity"="restaurant"]["cuisine"~"chinese|asian|sichuan|cantonese|japanese|korean|vietnamese|thai|noodle|dumpling",i]${area};
-  node["amenity"="restaurant"]["name"~"chinese|china|wok|noodle|dumpling|dim sum|bao|ramen|sushi|pho|thai|asia",i]${area};
-  way["amenity"="restaurant"]["name"~"chinese|china|wok|noodle|dumpling|dim sum|bao|ramen|sushi|pho|thai|asia",i]${area};
-  node["amenity"="fast_food"]["cuisine"~"chinese|asian|noodle",i]${area};
-  node["amenity"="cafe"]["cuisine"~"bubble_tea",i]${area};
-);
-out center;`;
+      return `[out:json][timeout:30];(node["amenity"="restaurant"]["cuisine"~"chinese|asian|sichuan|cantonese|japanese|korean|vietnamese|thai|noodle|dumpling",i]${area};way["amenity"="restaurant"]["cuisine"~"chinese|asian|sichuan|cantonese|japanese|korean|vietnamese|thai|noodle|dumpling",i]${area};node["amenity"="restaurant"]["name"~"chinese|china|wok|noodle|dumpling|dim.sum|bao|ramen|sushi|pho|thai|asia",i]${area};way["amenity"="restaurant"]["name"~"chinese|china|wok|noodle|dumpling|dim.sum|bao|ramen|sushi|pho|thai|asia",i]${area};node["amenity"="fast_food"]["cuisine"~"chinese|asian|noodle",i]${area};node["amenity"="cafe"]["cuisine"~"bubble_tea",i]${area};);out center;`;
 
     case "grocery":
-      return `[out:json][timeout:30];
-(
-  node["shop"~"supermarket|convenience|grocery"]["name"~"asia|asian|chinese|oriental|han|china|eastern|world food",i]${area};
-  way["shop"~"supermarket|convenience|grocery"]["name"~"asia|asian|chinese|oriental|han|china|eastern|world food",i]${area};
-  node["shop"="supermarket"]["origin"~"asian|chinese",i]${area};
-);
-out center;`;
+      return `[out:json][timeout:30];(node["shop"~"supermarket|convenience|grocery"]["name"~"asia|asian|chinese|oriental|han|china|eastern|world.food",i]${area};way["shop"~"supermarket|convenience|grocery"]["name"~"asia|asian|chinese|oriental|han|china|eastern|world.food",i]${area};);out center;`;
 
     case "service":
-      return `[out:json][timeout:30];
-(
-  node["office"~"lawyer|accountant|estate_agent|insurance"]["name"~"chinese|china|asia",i]${area};
-  way["office"~"lawyer|accountant|estate_agent|insurance"]["name"~"chinese|china|asia",i]${area};
-);
-out center;`;
+      return `[out:json][timeout:30];(node["office"~"lawyer|accountant|estate_agent|insurance"]["name"~"chinese|china|asia",i]${area};way["office"~"lawyer|accountant|estate_agent|insurance"]["name"~"chinese|china|asia",i]${area};);out center;`;
 
     default:
       return "";
