@@ -63,8 +63,7 @@ export async function fetchFromOverpass(type?: string): Promise<number> {
 
       const res = await fetch(OVERPASS_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: `data=${encodeURIComponent(query)}`,
+        body: new URLSearchParams({ data: query }),
       });
 
       if (!res.ok) {
