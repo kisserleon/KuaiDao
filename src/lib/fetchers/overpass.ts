@@ -52,14 +52,15 @@ async function runQuery(query: string): Promise<OverpassElement[]> {
         method: "POST",
         body: new URLSearchParams({ data: query }),
       });
-      const text = await res.text();
+      const text = (await res.text()).trim();
       if (!text.startsWith("{")) {
-        console.warn(`[Overpass] ${new URL(url).host} status=${res.status}, trying next...`);
+        console.warn(`[Overpass] ${new URL(url).host} non-JSON (status=${res.status}), trying next...`);
         continue;
       }
-      return JSON.parse(text).elements || [];
+      const data = JSON.parse(text);
+      if (data.elements) return data.elements;
     } catch (err) {
-      console.warn(`[Overpass] ${new URL(url).host} failed:`, (err as Error).message);
+      console.warn(`[Overpass] ${new URL(url).host} error:`, (err as Error).message);
     }
   }
   return [];
