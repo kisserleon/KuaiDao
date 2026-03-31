@@ -13,6 +13,8 @@
  */
 
 import { startScheduler, getSchedulerStatus } from "../src/lib/scheduler";
+import { fetchFromOverpass } from "../src/lib/fetchers/overpass";
+import { fetchFromDuckDuckGo } from "../src/lib/fetchers/duckduckgo";
 import { fetchFromGoogle } from "../src/lib/fetchers/google";
 import { fetchFromRedNote } from "../src/lib/fetchers/rednote";
 
@@ -21,7 +23,19 @@ const args = process.argv.slice(2);
 async function main() {
   if (args.includes("--now")) {
     console.log("=== Running immediate fetch ===");
-    const source = args.find((a) => a.startsWith("--source="))?.split("=")[1] || "all";
+    const source = args.find((a) => a.startsWith("--source="))?.split("=")[1] || "free";
+
+    if (source === "free" || source === "all" || source === "overpass") {
+      console.log("\n--- OpenStreetMap (Overpass) ---");
+      const count = await fetchFromOverpass();
+      console.log(`Overpass: ${count} listings fetched`);
+    }
+
+    if (source === "free" || source === "all" || source === "duckduckgo") {
+      console.log("\n--- DuckDuckGo (RedNote) ---");
+      const count = await fetchFromDuckDuckGo();
+      console.log(`DuckDuckGo: ${count} listings fetched`);
+    }
 
     if (source === "all" || source === "google") {
       console.log("\n--- Google Places ---");
@@ -30,7 +44,7 @@ async function main() {
     }
 
     if (source === "all" || source === "rednote") {
-      console.log("\n--- RedNote ---");
+      console.log("\n--- RedNote (Google CSE) ---");
       const count = await fetchFromRedNote();
       console.log(`RedNote: ${count} listings fetched`);
     }

@@ -1,5 +1,7 @@
 import cron, { type ScheduledTask } from "node-cron";
 import { loadConfig } from "../fetchers/config";
+import { fetchFromOverpass } from "../fetchers/overpass";
+import { fetchFromDuckDuckGo } from "../fetchers/duckduckgo";
 import { fetchFromGoogle } from "../fetchers/google";
 import { fetchFromRedNote } from "../fetchers/rednote";
 
@@ -19,17 +21,26 @@ export function startScheduler() {
 
   if (google.enabled) {
     const cronExpr = google.schedule || config.schedule.cron;
-    console.log(`[Scheduler] Google fetch scheduled: ${cronExpr}`);
+    console.log(`[Scheduler] Business fetch scheduled: ${cronExpr}`);
 
     googleTask = cron.schedule(
       cronExpr,
       async () => {
-        console.log(`[Scheduler] Running Google fetch at ${new Date().toISOString()}`);
+        console.log(`[Scheduler] Running business fetch at ${new Date().toISOString()}`);
         try {
-          const count = await fetchFromGoogle();
-          console.log(`[Scheduler] Google fetch complete: ${count} listings`);
+          // Use Overpass (free) first, then Google if key is available
+          let count = await fetchFromOverpass();
+          console.log(`[Scheduler] Overpass fetch: ${count} listings`);
+
+          if (process.env.GOOGLE_PLACES_API_KEY) {
+            const gCount = await fetchFromGoogle();
+            count += gCount;
+            console.log(`[Scheduler] Google fetch: ${gCount} listings`);
+          }
+
+          console.log(`[Scheduler] Business fetch complete: ${count} total listings`);
         } catch (err) {
-          console.error("[Scheduler] Google fetch failed:", err);
+          console.error("[Scheduler] Business fetch failed:", err);
         }
       },
       { timezone: config.schedule.timezone }
@@ -45,8 +56,17 @@ export function startScheduler() {
       async () => {
         console.log(`[Scheduler] Running RedNote fetch at ${new Date().toISOString()}`);
         try {
-          const count = await fetchFromRedNote();
-          console.log(`[Scheduler] RedNote fetch complete: ${count} listings`);
+          // Use DuckDuckGo (free) first, then Google CSE if configured
+          let count = await fetchFromDuckDuckGo();
+          console.log(`[Scheduler] DuckDuckGo fetch: ${count} listings`);
+
+          if (process.env.GOOGLE_SEARCH_API_KEY) {
+            const gCount = await fetchFromRedNote();
+            count += gCount;
+            console.log(`[Scheduler] Google CSE fetch: ${gCount} listings`);
+          }
+
+          console.log(`[Scheduler] RedNote fetch complete: ${count} total listings`);
         } catch (err) {
           console.error("[Scheduler] RedNote fetch failed:", err);
         }
