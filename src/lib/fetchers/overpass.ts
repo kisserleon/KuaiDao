@@ -8,6 +8,7 @@ import { upsertListings, logFetch } from "./store";
  */
 
 const OVERPASS_URL = "https://overpass-api.de/api/interpreter";
+const OVERPASS_FALLBACK = "https://overpass.kumi.systems/api/interpreter";
 
 interface OverpassElement {
   type: string;
@@ -18,23 +19,53 @@ interface OverpassElement {
   tags?: Record<string, string>;
 }
 
-// Overpass QL queries for each listing type
+const QUERIES: Record<string, string[]> = {
+  restaurant: [
+    '["amenity"="restaurant"]["cuisine"~"chinese|asian|sichuan|cantonese|japanese|korean|vietnamese|thai",i]',
+    '["amenity"="restaurant"]["name"~"chinese|china|wok|noodle|dumpling|bao|ramen|sushi|pho|thai|asia",i]',
+    '["amenity"="fast_food"]["cuisine"~"chinese|asian",i]',
+    '["amenity"="cafe"]["cuisine"~"bubble_tea",i]',
+  ],
+  grocery: [
+    '["shop"~"supermarket|convenience"]["name"~"asia|asian|chinese|oriental|china|eastern",i]',
+  ],
+  service: [
+    '["office"~"lawyer|accountant|estate_agent"]["name"~"chinese|china|asia",i]',
+  ],
+};
+
 function buildQuery(type: string, lat: number, lng: number, radius: number): string {
+  const filters = QUERIES[type];
+  if (!filters) return "";
   const area = `(around:${radius},${lat},${lng})`;
+  const parts = filters.flatMap(f => [
+    `node${f}${area}`,
+    `way${f}${area}`,
+  ]);
+  return `[out:json][timeout:30];(${parts.join(";")};);out center;`;
+}
 
-  switch (type) {
-    case "restaurant":
-      return `[out:json][timeout:30];(node["amenity"="restaurant"]["cuisine"~"chinese|asian|sichuan|cantonese|japanese|korean|vietnamese|thai|noodle|dumpling",i]${area};way["amenity"="restaurant"]["cuisine"~"chinese|asian|sichuan|cantonese|japanese|korean|vietnamese|thai|noodle|dumpling",i]${area};node["amenity"="restaurant"]["name"~"chinese|china|wok|noodle|dumpling|dim.sum|bao|ramen|sushi|pho|thai|asia",i]${area};way["amenity"="restaurant"]["name"~"chinese|china|wok|noodle|dumpling|dim.sum|bao|ramen|sushi|pho|thai|asia",i]${area};node["amenity"="fast_food"]["cuisine"~"chinese|asian|noodle",i]${area};node["amenity"="cafe"]["cuisine"~"bubble_tea",i]${area};);out center;`;
+async function queryOverpass(query: string): Promise<OverpassElement[]> {
+  for (const url of [OVERPASS_URL, OVERPASS_FALLBACK]) {
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        body: new URLSearchParams({ data: query }),
+      });
 
-    case "grocery":
-      return `[out:json][timeout:30];(node["shop"~"supermarket|convenience|grocery"]["name"~"asia|asian|chinese|oriental|han|china|eastern|world.food",i]${area};way["shop"~"supermarket|convenience|grocery"]["name"~"asia|asian|chinese|oriental|han|china|eastern|world.food",i]${area};);out center;`;
+      const text = await res.text();
+      if (!res.ok || text.startsWith("<?xml") || text.startsWith("<!")) {
+        console.warn(`[Overpass] ${url} returned non-JSON (status ${res.status}), trying fallback...`);
+        continue;
+      }
 
-    case "service":
-      return `[out:json][timeout:30];(node["office"~"lawyer|accountant|estate_agent|insurance"]["name"~"chinese|china|asia",i]${area};way["office"~"lawyer|accountant|estate_agent|insurance"]["name"~"chinese|china|asia",i]${area};);out center;`;
-
-    default:
-      return "";
+      const data = JSON.parse(text);
+      return data.elements || [];
+    } catch (err) {
+      console.warn(`[Overpass] ${url} failed:`, err instanceof Error ? err.message : err);
+    }
   }
+  return [];
 }
 
 function extractAddress(tags: Record<string, string>): string {
@@ -61,20 +92,7 @@ export async function fetchFromOverpass(type?: string): Promise<number> {
     try {
       console.log(`[Overpass] Fetching ${listingType}s near ${config.location.city}...`);
 
-      const res = await fetch(OVERPASS_URL, {
-        method: "POST",
-        body: new URLSearchParams({ data: query }),
-      });
-
-      if (!res.ok) {
-        const err = await res.text();
-        console.error(`[Overpass] Error for ${listingType}:`, err.slice(0, 200));
-        await logFetch("overpass", listingType, "error", 0, err.slice(0, 500), Date.now() - start);
-        continue;
-      }
-
-      const data = await res.json();
-      const elements: OverpassElement[] = data.elements || [];
+      const elements = await queryOverpass(query);
 
       const items = elements
         .filter((el) => el.tags?.name)
