@@ -91,6 +91,7 @@ export async function fetchFromOverpass(type?: string): Promise<number> {
 
     try {
       console.log(`[Overpass] Fetching ${listingType}s near ${config.location.city}...`);
+      console.log(`[Overpass] Query length: ${query.length}, starts: ${query.slice(0, 80)}`);
 
       const elements = await queryOverpass(query);
 
