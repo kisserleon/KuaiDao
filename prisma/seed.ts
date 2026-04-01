@@ -16,6 +16,19 @@ async function main() {
     },
   });
 
+  // Create admin user
+  const adminPassword = await bcrypt.hash("admin123", 12);
+  await prisma.user.upsert({
+    where: { email: "admin@kuaidao.app" },
+    update: { role: "admin" },
+    create: {
+      name: "Admin",
+      email: "admin@kuaidao.app",
+      password: adminPassword,
+      role: "admin",
+    },
+  });
+
   // Create sample reviews
   const reviews = [
     { targetType: "restaurant", targetId: "1", rating: 5, comment: "正宗四川味道，在都柏林能吃到这么地道的川菜太难得了！干辣鸡和蒜汁鸡都强烈推荐。" },
@@ -32,7 +45,8 @@ async function main() {
     });
   }
 
-  console.log("✅ Seed completed: 1 user + 6 reviews");
+  console.log("✅ Seed completed: 1 demo user + 1 admin user + 6 reviews");
+  console.log("   Admin login: admin@kuaidao.app / admin123");
 }
 
 main()

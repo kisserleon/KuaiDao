@@ -2,12 +2,14 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, User, LogOut, Shield } from "lucide-react";
 import { useState } from "react";
+import { useSession, signOut } from "next-auth/react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function Navbar() {
   const t = useTranslations();
+  const { data: session } = useSession();
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -64,6 +66,34 @@ export default function Navbar() {
             >
               {t("common.switchLang")}
             </button>
+
+            {session?.user ? (
+              <div className="hidden md:flex items-center gap-2">
+                {(session.user as { role?: string }).role === "admin" && (
+                  <Link href="/admin" className="p-2 text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/50 rounded-full transition-colors" title="Admin">
+                    <Shield size={18} />
+                  </Link>
+                )}
+                <span className="text-sm text-gray-600 dark:text-gray-300 max-w-[100px] truncate">{session.user.name}</span>
+                <button
+                  onClick={() => signOut()}
+                  className="p-2 text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/50 rounded-full transition-colors"
+                  title="Logout"
+                >
+                  <LogOut size={18} />
+                </button>
+              </div>
+            ) : (
+              <div className="hidden md:flex items-center gap-1">
+                <Link href="/login" className="px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-red-700 dark:hover:text-red-400 transition-colors">
+                  登录
+                </Link>
+                <Link href="/register" className="px-3 py-1.5 text-sm font-medium bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors">
+                  注册
+                </Link>
+              </div>
+            )}
+
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:text-red-700"
@@ -89,6 +119,32 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
+            <div className="border-t border-red-100 dark:border-gray-800 mt-2 pt-2">
+              {session?.user ? (
+                <>
+                  <div className="px-3 py-2 text-sm text-gray-500 dark:text-gray-400">
+                    <User size={14} className="inline mr-1" /> {session.user.name}
+                  </div>
+                  {(session.user as { role?: string }).role === "admin" && (
+                    <Link href="/admin" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/50">
+                      <Shield size={14} className="inline mr-1" /> 管理后台
+                    </Link>
+                  )}
+                  <button onClick={() => { signOut(); setMobileOpen(false); }} className="block w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950">
+                    <LogOut size={14} className="inline mr-1" /> 退出登录
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link href="/login" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 dark:text-gray-300">
+                    登录 Login
+                  </Link>
+                  <Link href="/register" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-red-600 dark:text-red-400">
+                    注册 Register
+                  </Link>
+                </>
+              )}
+            </div>
           </div>
         )}
       </div>
