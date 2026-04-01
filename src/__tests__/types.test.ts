@@ -15,6 +15,7 @@ describe("TypeScript types", () => {
       reviewCount: 100,
       priceLevel: 2,
       imageUrl: "/test.jpg",
+      images: ["/test1.jpg", "/test2.jpg"],
       hours: "9-5",
       description: "Test",
       descriptionZh: "测试",

@@ -95,7 +95,7 @@ function HomeContent() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {restaurants.slice(0, 3).map((r) => (
-            <ListingCard key={r.id} id={r.id} href={`/restaurants/${r.id}`} title={`${r.nameZh} ${r.name}`} subtitle={r.cuisine.join(" · ")} rating={r.rating} reviewCount={r.reviewCount} address={r.address} tags={r.tags} priceLevel={r.priceLevel} />
+            <ListingCard key={r.id} id={r.id} href={`/restaurants/${r.id}`} title={`${r.nameZh} ${r.name}`} subtitle={r.cuisine.join(" · ")} rating={r.rating} reviewCount={r.reviewCount} address={r.address} tags={r.tags} priceLevel={r.priceLevel} imageUrl={r.imageUrl} />
           ))}
         </div>
       </section>

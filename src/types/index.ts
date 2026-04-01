@@ -12,6 +12,7 @@ export interface Restaurant {
   reviewCount: number;
   priceLevel: 1 | 2 | 3 | 4;
   imageUrl: string;
+  images: string[];
   hours: string;
   description: string;
   descriptionZh: string;

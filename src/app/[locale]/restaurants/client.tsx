@@ -112,6 +112,7 @@ export default function RestaurantsClient() {
             address={r.address}
             tags={r.tags}
             priceLevel={r.priceLevel}
+            imageUrl={r.imageUrl}
           />
         ))}
       </div>

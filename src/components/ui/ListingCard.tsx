@@ -1,5 +1,6 @@
 import { Star, MapPin } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 
 interface ListingCardProps {
   id: string;
@@ -12,6 +13,7 @@ interface ListingCardProps {
   tags?: string[];
   priceLevel?: number;
   emoji?: string;
+  imageUrl?: string;
 }
 
 export default function ListingCard({
@@ -24,12 +26,25 @@ export default function ListingCard({
   tags,
   priceLevel,
   emoji = "🍜",
+  imageUrl,
 }: ListingCardProps) {
   return (
     <Link href={href} className="block group">
       <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-red-200 dark:hover:border-red-800 hover:shadow-lg transition-all duration-300 overflow-hidden">
-        <div className="h-40 bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-950/30 dark:to-orange-950/30 flex items-center justify-center">
-          <span className="text-5xl opacity-60 group-hover:scale-110 transition-transform">{emoji}</span>
+        <div className="relative h-44 overflow-hidden">
+          {imageUrl ? (
+            <Image
+              src={imageUrl}
+              alt={title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          ) : (
+            <div className="h-full bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-950/30 dark:to-orange-950/30 flex items-center justify-center">
+              <span className="text-5xl opacity-60 group-hover:scale-110 transition-transform">{emoji}</span>
+            </div>
+          )}
         </div>
 
         <div className="p-4">

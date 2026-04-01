@@ -2,10 +2,12 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Star, MapPin, Phone, Clock, ArrowLeft, Tag } from "lucide-react";
+import { Star, MapPin, Phone, Clock, ArrowLeft, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Restaurant } from "@/types";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import ReviewSection from "@/components/features/ReviewSection";
+import { useState } from "react";
 
 const MiniMap = dynamic(() => import("@/components/features/MiniMap"), { ssr: false });
 
@@ -13,6 +15,8 @@ export default function RestaurantDetailClient({ restaurant: r }: { restaurant: 
   const t = useTranslations();
   const locale = useLocale();
   const isZh = locale === "zh";
+  const [activeImg, setActiveImg] = useState(0);
+  const photos = r.images.length > 0 ? r.images : [r.imageUrl];
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -21,12 +25,62 @@ export default function RestaurantDetailClient({ restaurant: r }: { restaurant: 
       </Link>
 
       <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden">
-        {/* Hero banner */}
-        <div className="h-48 md:h-64 bg-gradient-to-br from-red-100 to-orange-100 dark:from-red-950/40 dark:to-orange-950/40 flex items-center justify-center">
-          <span className="text-8xl">🍜</span>
+        {/* Photo Gallery */}
+        <div className="relative h-64 md:h-80 overflow-hidden group">
+          <Image
+            src={photos[activeImg]}
+            alt={`${r.nameZh} ${r.name}`}
+            fill
+            className="object-cover transition-opacity duration-300"
+            sizes="(max-width: 768px) 100vw, 896px"
+            priority
+          />
+          {photos.length > 1 && (
+            <>
+              <button
+                onClick={() => setActiveImg((activeImg - 1 + photos.length) % photos.length)}
+                className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                onClick={() => setActiveImg((activeImg + 1) % photos.length)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                <ChevronRight size={20} />
+              </button>
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
+                {photos.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveImg(i)}
+                    className={`w-2 h-2 rounded-full transition-all ${i === activeImg ? "bg-white w-4" : "bg-white/50"}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+          <div className="absolute bottom-3 right-3 bg-black/40 text-white text-xs px-2 py-1 rounded-full">
+            {activeImg + 1}/{photos.length}
+          </div>
         </div>
 
         <div className="p-6 md:p-8">
+          {/* Photo thumbnails */}
+          {photos.length > 1 && (
+            <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
+              {photos.map((src, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveImg(i)}
+                  className={`relative w-20 h-14 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${i === activeImg ? "border-red-500 ring-1 ring-red-300" : "border-transparent opacity-70 hover:opacity-100"}`}
+                >
+                  <Image src={src} alt="" fill className="object-cover" sizes="80px" />
+                </button>
+              ))}
+            </div>
+          )}
+
           <div className="flex items-start justify-between gap-4">
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100">

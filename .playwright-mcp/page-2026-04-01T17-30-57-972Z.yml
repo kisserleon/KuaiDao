@@ -1,0 +1,957 @@
+- generic [ref=e1]:
+  - link [ref=e2] [cursor=pointer]: Skip to main content
+  - link [ref=e3] [cursor=pointer]:
+    - /url: "#"
+    - text: Turn off continuous scrolling
+  - link [ref=e4] [cursor=pointer]:
+    - /url: https://support.google.com/websearch/answer/181196?hl=en-GB
+    - text: Accessibility help
+  - link [ref=e5] [cursor=pointer]: Accessibility feedback
+  - dialog "Before you continue to Google Search" [active]:
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - img "Google" [ref=e15]
+        - generic [ref=e16]:
+          - 'button "Language: ‪English‬" [ref=e18] [cursor=pointer]':
+            - generic [ref=e19]:
+              - img
+              - generic [ref=e20]: en
+          - link "Sign in" [ref=e21] [cursor=pointer]
+      - generic [ref=e22]:
+        - heading "Before you continue to Google" [level=1] [ref=e23]
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - text: We use
+            - link "cookies" [ref=e26] [cursor=pointer]:
+              - /url: https://policies.google.com/technologies/cookies?utm_source=ucbs&hl=en-GB
+            - text: and data to
+            - list [ref=e27]:
+              - listitem [ref=e28]: Deliver and maintain Google services
+              - listitem [ref=e29]: Track outages and protect against spam, fraud and abuse
+              - listitem [ref=e30]: Measure audience engagement and site statistics to understand how our services are used and enhance the quality of those services
+          - generic [ref=e31]:
+            - text: If you choose to 'Accept all', we will also use cookies and data to
+            - list [ref=e32]:
+              - listitem [ref=e33]: Develop and improve new services
+              - listitem [ref=e34]: Deliver and measure the effectiveness of ads
+              - listitem [ref=e35]: Show personalised content, depending on your settings
+              - listitem [ref=e36]: Show personalised ads, depending on your settings
+            - generic [ref=e37]: If you choose to 'Reject all', we will not use cookies for these additional purposes.
+          - generic [ref=e38]: Non-personalised content is influenced by things like the content that you’re currently viewing, activity in your active Search session, and your location. Non-personalised ads are influenced by the content that you’re currently viewing and your general location. Personalised content and ads can also include more relevant results, recommendations and tailored ads based on past activity from this browser, like previous Google searches. We also use cookies and data to tailor the experience to be age-appropriate, if relevant.
+          - generic [ref=e39]: Select 'More options' to see additional information, including details about managing your privacy settings. You can also visit g.co/privacytools at any time.
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - button "Reject all" [ref=e42] [cursor=pointer]
+          - button "Accept all" [ref=e43] [cursor=pointer]
+        - link "More options for personalisation settings and cookies" [ref=e45] [cursor=pointer]:
+          - generic "More options for personalisation settings and cookies" [ref=e46]: More options
+      - generic [ref=e47]:
+        - link "Privacy" [ref=e48] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=en-GB&fg=1&utm_source=ucbs
+        - generic [ref=e49]: ·
+        - link "Terms" [ref=e50] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=en-GB&fg=1&utm_source=ucbs
+  - generic [ref=e55]:
+    - search [ref=e56]:
+      - generic [ref=e58]:
+        - link [ref=e60] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQPAhr
+          - img [ref=e61]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - combobox [ref=e72]: M&L Chinese Restaurant Dublin Cathedral Street M&L Chinese Restaurant Dublin Cathedral Street
+            - generic [ref=e73]:
+              - button [ref=e75] [cursor=pointer]:
+                - img [ref=e77]
+              - generic [ref=e80]:
+                - button [ref=e81] [cursor=pointer]:
+                  - img [ref=e82]
+                - button [ref=e84] [cursor=pointer]:
+                  - img [ref=e85]
+          - button [ref=e87] [cursor=pointer]:
+            - img [ref=e90]
+    - generic [ref=e92]:
+      - button [ref=e94] [cursor=pointer]
+      - generic [ref=e95]:
+        - button [ref=e97] [cursor=pointer]:
+          - img [ref=e98]
+        - link [ref=e102] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DM%2526L%2BChinese%2BRestaurant%2BDublin%2BCathedral%2BStreet%26udm%3D2%26sei%3DUFbNabnIJN_V7M8P5LiLqA8&ec=futura_srp_og_si_72236_p
+          - text: Sign in
+  - generic [ref=e104]:
+    - navigation [ref=e109]:
+      - list [ref=e111]:
+        - listitem [ref=e112]:
+          - link [ref=e115] [cursor=pointer]:
+            - /url: /search?q=M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&sca_esv=2f50148802d04860&udm=50&fbs=ADc_l-ZXAaElPhAJpOq_cdw01zD5Ycd7_yInS0yFElWSpU-k43UwyUcQsl7dq62PLjDE9vueUquML3LMDgXiHZ0Y4qFTUj-bi1S7pWDt5xQTJhgYJrMcYW8zq-VbHbupXscWORZbb71qe34tP5dDER4Ax6EuJBw4iT_BEtsE2r6Z49k0g0llQLACDdHaE0N0iw41zjH5JcE0EeKpouJCaVYJoiQB4fDQ5Nn0znRxFk13XJ1J66VM0Dk&aep=1&ntc=1&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQ2J8OegQIChAD
+            - generic [ref=e118]: AI Mode
+        - listitem [ref=e119]:
+          - link [ref=e120] [cursor=pointer]:
+            - /url: /search?sca_esv=2f50148802d04860&q=M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&source=lnms&fbs=ADc_l-ZXAaElPhAJpOq_cdw01zD5Ycd7_yInS0yFElWSpU-k43UwyUcQsl7dq62PLjDE9vueUquML3LMDgXiHZ0Y4qFTUj-bi1S7pWDt5xQTJhgYJrMcYW8zq-VbHbupXscWORZbb71qe34tP5dDER4Ax6EuJBw4iT_BEtsE2r6Z49k0g0llQLACDdHaE0N0iw41zjH5JcE0EeKpouJCaVYJoiQB4fDQ5Nn0znRxFk13XJ1J66VM0Dk&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQ0pQJegQIEBAB
+            - generic [ref=e122]: All
+        - listitem [ref=e123]:
+          - link [ref=e124] [cursor=pointer]:
+            - /url: https://maps.google.com/maps?sca_esv=2f50148802d04860&output=search&q=M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&source=lnms&fbs=ADc_l-ZXAaElPhAJpOq_cdw01zD5Ycd7_yInS0yFElWSpU-k43UwyUcQsl7dq62PLjDE9vueUquML3LMDgXiHZ0Y4qFTUj-bi1S7pWDt5xQTJhgYJrMcYW8zq-VbHbupXscWORZbb71qe34tP5dDER4Ax6EuJBw4iT_BEtsE2r6Z49k0g0llQLACDdHaE0N0iw41zjH5JcE0EeKpouJCaVYJoiQB4fDQ5Nn0znRxFk13XJ1J66VM0Dk&entry=mc&ved=1t:200715&ictx=111
+            - generic [ref=e126]: Maps
+        - listitem [ref=e127]:
+          - link [disabled] [ref=e128]:
+            - generic [ref=e130]: Images
+        - listitem [ref=e131]:
+          - link [ref=e132] [cursor=pointer]:
+            - /url: /search?sca_esv=2f50148802d04860&udm=18&fbs=ADc_l-ZXAaElPhAJpOq_cdw01zD5Ycd7_yInS0yFElWSpU-k43UwyUcQsl7dq62PLjDE9vueUquML3LMDgXiHZ0Y4qFTUj-bi1S7pWDt5xQTJhgYJrMcYW8zq-VbHbupXscWORZbb71qe34tP5dDER4Ax6EuJBw4iT_BEtsE2r6Z49k0g0llQLACDdHaE0N0iw41zjH5JcE0EeKpouJCaVYJoiQB4fDQ5Nn0znRxFk13XJ1J66VM0Dk&q=M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQs6gLegQIDxAB
+            - generic [ref=e134]: Forums
+        - listitem [ref=e135]:
+          - link [ref=e136] [cursor=pointer]:
+            - /url: /search?sca_esv=2f50148802d04860&udm=39&fbs=ADc_l-ZXAaElPhAJpOq_cdw01zD5Ycd7_yInS0yFElWSpU-k43UwyUcQsl7dq62PLjDE9vueUquML3LMDgXiHZ0Y4qFTUj-bi1S7pWDt5xQTJhgYJrMcYW8zq-VbHbupXscWORZbb71qe34tP5dDER4Ax6EuJBw4iT_BEtsE2r6Z49k0g0llQLACDdHaE0N0iw41zjH5JcE0EeKpouJCaVYJoiQB4fDQ5Nn0znRxFk13XJ1J66VM0Dk&q=M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQs6gLegQIDhAB
+            - generic [ref=e138]: Short videos
+        - listitem [ref=e139]:
+          - link [ref=e140] [cursor=pointer]:
+            - /url: /search?sca_esv=2f50148802d04860&udm=web&fbs=ADc_l-ZXAaElPhAJpOq_cdw01zD5Ycd7_yInS0yFElWSpU-k43UwyUcQsl7dq62PLjDE9vueUquML3LMDgXiHZ0Y4qFTUj-bi1S7pWDt5xQTJhgYJrMcYW8zq-VbHbupXscWORZbb71qe34tP5dDER4Ax6EuJBw4iT_BEtsE2r6Z49k0g0llQLACDdHaE0N0iw41zjH5JcE0EeKpouJCaVYJoiQB4fDQ5Nn0znRxFk13XJ1J66VM0Dk&q=M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQs6gLegQICxAB
+            - generic [ref=e142]: Web
+        - listitem [ref=e143]:
+          - button [ref=e144] [cursor=pointer]:
+            - generic [ref=e146]:
+              - generic [ref=e147]: More
+              - img [ref=e149]
+    - navigation [ref=e152]:
+      - navigation [ref=e155]:
+        - list [ref=e163]:
+          - listitem [ref=e164]:
+            - link [ref=e165] [cursor=pointer]:
+              - /url: /search?sca_esv=2f50148802d04860&q=tripadvisor+M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-xflvf2lwpG_Q1DPXMZZP3FgllclcTQYs9IQk1lkZztiyKg00-qML0viphDyeDQc66FnQHVE3pucXrocU-s_EfG7sjmSJVtV9gS0DTkH1i_52nMC8KgAzIeuJ6oc22h4D_7lB9GxNfyNeukCgzY7u4v8zcUh2mCkrtaXU7trOv07ruTlmlfEWWxCGipGECmkXXyMmIg&udm=2&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQxKsJKAB6BAgVEAE&ictx=0
+              - generic [ref=e171]: Tripadvisor
+          - listitem [ref=e172]:
+            - link [ref=e173] [cursor=pointer]:
+              - /url: /search?sca_esv=2f50148802d04860&q=restaurant+review+M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-A9sIJK4-zKrzqjKmPL8hiiIKkU1KkKSlx_YuOZNo231LZeFGhfAR5cSXbZaP994XXblv386KsocBE1yzF9eH5h-VLgjMQtxzL6OTev0W0ErqvEhdfYyCN580PiTsT0l5EVaFVIvjHBOdD1YpchXv3WyN-27NqlsOTrfSbFb7-UsFfsLFne5jyvYZmi_5kPWbbtVp1Q&udm=2&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQxKsJKAF6BAgSEAE&ictx=0
+              - generic [ref=e179]: Restaurant review
+          - listitem [ref=e180]:
+            - link [ref=e181] [cursor=pointer]:
+              - /url: /search?sca_esv=2f50148802d04860&q=m%26l+szechuan+chinese+M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-wuGxQvhDnRAE7fpP-EfFk5l0aEuMGMS-hQSLT6g6SAa6OC93-Wjy8UVlIZxoU7pM8mjaYvJJlNbD00QQbWf0oG5sf1ktLrkz9h7vSWtk4KJ0yH0YhJdkldXas38dX25beh3-VOTKrXI8oa0lSzQzmWsDYTHV-91F5liPNDTZvrpl12RuLoYuSqd1npir9B26NxYTXw&udm=2&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQxKsJKAJ6BAgWEAE&ictx=0
+              - generic [ref=e187]: M&l szechuan chinese
+          - listitem [ref=e188]:
+            - link [ref=e189] [cursor=pointer]:
+              - /url: /search?sca_esv=2f50148802d04860&q=fried+rice+M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-vtWgw14fk27IASKBwlXbuBOb2Dd-pnA10xSEf5J2xnGObWjFyypVkbk-SpQGEIgIfog61Wp6mhOcaGkOweayT47_IrQE591G3N-hKoqZsyrtUrmXwsP0qLlBYy5jElZgbinOV7rdZ9K7wFH-8LrWNv0lIANBTwZGuczGC-oSon6VtuAyFEPnCo9ujlx4MsA6LAlNnQ&udm=2&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQxKsJKAN6BAgUEAE&ictx=0
+              - generic [ref=e195]: Fried rice
+          - listitem [ref=e196]:
+            - link [ref=e197] [cursor=pointer]:
+              - /url: /search?sca_esv=2f50148802d04860&q=menu+M%26L+Chinese+Restaurant+Dublin+Cathedral+Street&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-lZXy4WXjCBs-WMfCmu8tIcInV8KA-8Aar9AKsaKaPoAUvvi30fLYmgiI5yHrDxwTGekeMoTjsoqLZX1KK3dlynzrCl3Ry0BWcVwHs6Tw5VVp1O8-Hw401jiHLjgwRtl7Xj5Woek_-l6p5LOWuOJUO8aDrZRNtNhtRe7hKmOnsEKptYlS&udm=2&sa=X&ved=2ahUKEwjtjsmSl82TAxVJU6QEHSrYDxEQxKsJKAR6BAgTEAE&ictx=0
+              - generic [ref=e203]: Menu
+    - heading [level=1] [ref=e204]: Search Results
+    - main [ref=e206]:
+      - generic [ref=e212]:
+        - generic [ref=e215]:
+          - generic [ref=e216] [cursor=pointer]:
+            - heading [level=3] [ref=e218]:
+              - button [ref=e220]:
+                - img [ref=e223]
+            - link [ref=e225]:
+              - /url: https://mlchineserestaurant.com/
+              - generic [ref=e230]: mlchineserestaurant.com
+              - generic [ref=e232]: M&L Chinese Restaurant – M&L Chinese ...
+          - generic [ref=e233] [cursor=pointer]:
+            - heading [level=3] [ref=e235]:
+              - button [ref=e237]:
+                - img [ref=e240]
+            - link [ref=e242]:
+              - /url: https://www.opentable.ie/r/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e247]: OpenTable
+              - generic [ref=e249]: M&L Chinese Restaurant - Updated 2026 ...
+          - generic [ref=e250] [cursor=pointer]:
+            - heading [level=3] [ref=e252]:
+              - button [ref=e254]:
+                - img [ref=e257]
+            - link [ref=e259]:
+              - /url: https://www.dublintown.ie/business/ml-chinese/
+              - generic [ref=e264]: DublinTown
+              - generic [ref=e266]: M&L Chinese - Dublin Town
+          - generic [ref=e267] [cursor=pointer]:
+            - heading [level=3] [ref=e269]:
+              - button [ref=e271]:
+                - img [ref=e274]
+            - link [ref=e276]:
+              - /url: https://www.independent.ie/life/food-drink/food-reviews/review-m-and-l-chinese-restaurant-as-an-alternative-to-the-sunday-roast-mandl-is-a-winner/35969656.html
+              - generic [ref=e281]: The Irish Independent
+              - generic [ref=e283]: "Review - M & L Chinese Restaurant: 'As ..."
+          - generic [ref=e284] [cursor=pointer]:
+            - heading [level=3] [ref=e286]:
+              - button [ref=e288]:
+                - img [ref=e291]
+            - link [ref=e293]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e298]: HappyCow
+              - generic [ref=e300]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e301] [cursor=pointer]:
+            - heading [level=3] [ref=e303]:
+              - button [ref=e305]:
+                - img [ref=e308]
+            - link [ref=e310]:
+              - /url: http://www.frenchfoodieindublin.com/2014/06/a-hidden-chinese-gem-m-l-cathedral.html
+              - generic [ref=e315]: French Foodie in Dublin
+              - generic [ref=e317]: Dublin Food ...
+          - generic [ref=e318] [cursor=pointer]:
+            - heading [level=3] [ref=e320]:
+              - button [ref=e322]:
+                - img [ref=e325]
+            - link [ref=e327]:
+              - /url: https://www.allthefood.ie/reviews/m-and-l-chinese
+              - generic [ref=e332]: All The Food
+              - generic [ref=e334]: "M and L Chinese | All the Food: Dublin ..."
+          - generic [ref=e335] [cursor=pointer]:
+            - heading [level=3] [ref=e337]:
+              - button [ref=e339]:
+                - img [ref=e342]
+            - link [ref=e344]:
+              - /url: https://universitytimes.ie/2017/12/dublins-diamond-in-the-rough-chinese-restaurant/
+              - generic [ref=e349]: The University Times
+              - generic [ref=e351]: Dublin's Diamond-in-the-Rough Chinese ...
+          - generic [ref=e352] [cursor=pointer]:
+            - heading [level=3] [ref=e354]:
+              - button [ref=e356]:
+                - img [ref=e359]
+            - link [ref=e361]:
+              - /url: https://www.allthefood.ie/reviews/m-and-l-chinese
+              - generic [ref=e366]: All The Food
+              - generic [ref=e368]: "M and L Chinese | All the Food: Dublin ..."
+          - generic [ref=e369] [cursor=pointer]:
+            - heading [level=3] [ref=e371]:
+              - button [ref=e373]:
+                - img [ref=e376]
+            - link [ref=e378]:
+              - /url: https://www.tripadvisor.co.uk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e383]: Tripadvisor
+              - generic [ref=e385]: M&L CHINESE RESTAURANT, Dublin - 2026 ...
+          - generic [ref=e386] [cursor=pointer]:
+            - heading [level=3] [ref=e388]:
+              - button [ref=e390]:
+                - img [ref=e393]
+            - link [ref=e395]:
+              - /url: https://www.tripadvisor.co.uk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e400]: Tripadvisor
+              - generic [ref=e402]: M&L CHINESE RESTAURANT, Dublin - 2026 ...
+          - generic [ref=e403] [cursor=pointer]:
+            - heading [level=3] [ref=e405]:
+              - button [ref=e407]:
+                - img [ref=e410]
+            - link [ref=e412]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e417]: Yelp
+              - generic [ref=e419]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e420] [cursor=pointer]:
+            - heading [level=3] [ref=e422]:
+              - button [ref=e424]:
+                - img [ref=e427]
+            - link [ref=e429]:
+              - /url: https://www.instagram.com/mlchinese/
+              - generic [ref=e434]: Instagram
+              - generic [ref=e436]: M&L Chinese Restaurant (@mlchinese ...
+          - generic [ref=e437] [cursor=pointer]:
+            - heading [level=3] [ref=e439]:
+              - button [ref=e441]:
+                - img [ref=e444]
+            - link [ref=e446]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e451]: HappyCow
+              - generic [ref=e453]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e454] [cursor=pointer]:
+            - heading [level=3] [ref=e456]:
+              - button [ref=e458]:
+                - img [ref=e461]
+            - link [ref=e463]:
+              - /url: https://www.facebook.com/mlchineserestaurant/?locale=el_GR
+              - generic [ref=e468]: Facebook
+              - generic [ref=e470]: M&L Chinese Restaurant | Dublin
+          - generic [ref=e471] [cursor=pointer]:
+            - heading [level=3] [ref=e473]:
+              - button [ref=e475]:
+                - img [ref=e478]
+            - link [ref=e480]:
+              - /url: https://www.instagram.com/p/CZvKJm-q50c/
+              - generic [ref=e485]: Instagram
+              - generic [ref=e487]: birthday parties ...
+          - generic [ref=e488] [cursor=pointer]:
+            - heading [level=3] [ref=e490]:
+              - button [ref=e492]:
+                - img [ref=e495]
+            - link [ref=e497]:
+              - /url: https://mlchineserestaurant.com/
+              - generic [ref=e502]: mlchineserestaurant.com
+              - generic [ref=e504]: M&L Chinese Restaurant – M&L Chinese ...
+          - generic [ref=e505] [cursor=pointer]:
+            - heading [level=3] [ref=e507]:
+              - button [ref=e509]:
+                - img [ref=e512]
+            - link [ref=e514]:
+              - /url: https://www.tripadvisor.co.uk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e519]: Tripadvisor
+              - generic [ref=e521]: M&L CHINESE RESTAURANT, Dublin - 2026 ...
+          - generic [ref=e522] [cursor=pointer]:
+            - heading [level=3] [ref=e524]:
+              - button [ref=e526]:
+                - img [ref=e529]
+            - link [ref=e531]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e536]: Yelp
+              - generic [ref=e538]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e539] [cursor=pointer]:
+            - heading [level=3] [ref=e541]:
+              - button [ref=e543]:
+                - img [ref=e546]
+            - link [ref=e548]:
+              - /url: https://www.corner.inc/place/1152090
+              - generic [ref=e553]: Corner
+              - generic [ref=e555]: M&L Szechuan Chinese - Dublin 1 ...
+          - generic [ref=e556] [cursor=pointer]:
+            - heading [level=3] [ref=e558]:
+              - button [ref=e560]:
+                - img [ref=e563]
+            - link [ref=e565]:
+              - /url: https://maps.apple.com/place?place-id=I340651095CBB076A
+              - generic [ref=e570]: Apple Maps
+              - generic [ref=e572]: M&L Chinese Restaurant in Dublin 1 ...
+          - generic [ref=e573] [cursor=pointer]:
+            - heading [level=3] [ref=e575]:
+              - button [ref=e577]:
+                - img [ref=e580]
+            - link [ref=e582]:
+              - /url: https://www.diningindublin.ie/menus/m-l-chinese/
+              - generic [ref=e587]: Dining in Dublin Magazine
+              - generic [ref=e589]: M & L Chinese | Dining in Dublin Magazine
+          - generic [ref=e590] [cursor=pointer]:
+            - generic [ref=e591]:
+              - heading [level=3] [ref=e592]:
+                - button [ref=e594]:
+                  - img [ref=e597]
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+            - link [ref=e599]:
+              - /url: https://www.facebook.com/mlchineserestaurant/
+              - generic [ref=e604]: Facebook
+              - generic [ref=e606]: M&L Chinese Restaurant | Dublin
+          - generic [ref=e607] [cursor=pointer]:
+            - heading [level=3] [ref=e609]:
+              - button [ref=e611]:
+                - img [ref=e614]
+            - link [ref=e616]:
+              - /url: https://www.corner.inc/place/1152090
+              - generic [ref=e621]: Corner
+              - generic [ref=e623]: M&L Szechuan Chinese - Dublin 1 ...
+          - generic [ref=e624] [cursor=pointer]:
+            - heading [level=3] [ref=e626]:
+              - button [ref=e628]:
+                - img [ref=e631]
+            - link [ref=e633]:
+              - /url: https://www.instagram.com/mlchinese/
+              - generic [ref=e638]: Instagram
+              - generic [ref=e640]: M&L Chinese Restaurant (@mlchinese ...
+          - generic [ref=e641] [cursor=pointer]:
+            - heading [level=3] [ref=e643]:
+              - button [ref=e645]:
+                - img [ref=e648]
+            - link [ref=e650]:
+              - /url: https://en.tripadvisor.com.hk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e655]: Tripadvisor
+              - generic [ref=e657]: M&L CHINESE RESTAURANT, Dublin - Menu ...
+          - generic [ref=e658] [cursor=pointer]:
+            - heading [level=3] [ref=e660]:
+              - button [ref=e662]:
+                - img [ref=e665]
+            - link [ref=e667]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e672]: HappyCow
+              - generic [ref=e674]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e675] [cursor=pointer]:
+            - heading [level=3] [ref=e677]:
+              - button [ref=e679]:
+                - img [ref=e682]
+            - link [ref=e684]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e689]: Yelp
+              - generic [ref=e691]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e692] [cursor=pointer]:
+            - heading [level=3] [ref=e694]:
+              - button [ref=e696]:
+                - img [ref=e699]
+            - link [ref=e701]:
+              - /url: https://www.facebook.com/mlchineserestaurant/?locale=el_GR
+              - generic [ref=e706]: Facebook
+              - generic [ref=e708]: M&L Chinese Restaurant | Dublin
+          - generic [ref=e709] [cursor=pointer]:
+            - heading [level=3] [ref=e711]:
+              - button [ref=e713]:
+                - img [ref=e716]
+            - link [ref=e718]:
+              - /url: https://www.mapquest.com/ie/ml-chinese-restaurant-527383032
+              - generic [ref=e723]: MapQuest
+              - generic [ref=e725]: M&L Chinese Restaurant, 13/14 Cathedral ...
+          - generic [ref=e726] [cursor=pointer]:
+            - heading [level=3] [ref=e728]:
+              - button [ref=e730]:
+                - img [ref=e733]
+            - link [ref=e735]:
+              - /url: https://ginandgriddle.wordpress.com/2014/08/10/review-ml-chinese-restaurant-dublin-1/
+              - generic [ref=e740]: Gin & Griddle - WordPress.com
+              - generic [ref=e742]: Review ~ M&L Chinese Restaurant, Dublin ...
+          - generic [ref=e743] [cursor=pointer]:
+            - heading [level=3] [ref=e745]:
+              - button [ref=e747]:
+                - img [ref=e750]
+            - link [ref=e752]:
+              - /url: https://www.mapquest.com/ie/ml-chinese-restaurant-527383032
+              - generic [ref=e757]: MapQuest
+              - generic [ref=e759]: M&L Chinese Restaurant, 13/14 Cathedral ...
+          - generic [ref=e760] [cursor=pointer]:
+            - heading [level=3] [ref=e762]:
+              - button [ref=e764]:
+                - img [ref=e767]
+            - link [ref=e769]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e774]: HappyCow
+              - generic [ref=e776]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e777] [cursor=pointer]:
+            - heading [level=3] [ref=e779]:
+              - button [ref=e781]:
+                - img [ref=e784]
+            - link [ref=e786]:
+              - /url: https://en.wikipedia.org/wiki/Cathedral_Street,_Dublin
+              - generic [ref=e791]: Wikipedia
+              - generic [ref=e793]: Cathedral Street, Dublin - Wikipedia
+          - generic [ref=e794] [cursor=pointer]:
+            - heading [level=3] [ref=e796]:
+              - button [ref=e798]:
+                - img [ref=e801]
+            - link [ref=e803]:
+              - /url: https://www.novacircle.com/spots/europe/ireland/dublin-1/dublin/dublin/ml-chinese-restaurant-26d663
+              - generic [ref=e808]: Nova Circle
+              - generic [ref=e810]: M&L Chinese Restaurant in Dublin ...
+          - generic [ref=e811] [cursor=pointer]:
+            - heading [level=3] [ref=e813]:
+              - button [ref=e815]:
+                - img [ref=e818]
+            - link [ref=e820]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e825]: Yelp
+              - generic [ref=e827]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e828] [cursor=pointer]:
+            - heading [level=3] [ref=e830]:
+              - button [ref=e832]:
+                - img [ref=e835]
+            - link [ref=e837]:
+              - /url: https://www.dublintown.ie/business/ml-chinese/
+              - generic [ref=e842]: DublinTown
+              - generic [ref=e844]: M&L Chinese - Dublin Town
+          - generic [ref=e845] [cursor=pointer]:
+            - heading [level=3] [ref=e847]:
+              - button [ref=e849]:
+                - img [ref=e852]
+            - link [ref=e854]:
+              - /url: https://www.allthefood.ie/reviews/m-and-l-chinese
+              - generic [ref=e859]: All The Food
+              - generic [ref=e861]: "M and L Chinese | All the Food: Dublin ..."
+          - generic [ref=e862] [cursor=pointer]:
+            - heading [level=3] [ref=e864]:
+              - button [ref=e866]:
+                - img [ref=e869]
+            - link [ref=e871]:
+              - /url: https://www.instagram.com/mlchinese/
+              - generic [ref=e876]: Instagram
+              - generic [ref=e878]: M&L Chinese Restaurant (@mlchinese ...
+          - generic [ref=e879] [cursor=pointer]:
+            - heading [level=3] [ref=e881]:
+              - button [ref=e883]:
+                - img [ref=e886]
+            - link [ref=e888]:
+              - /url: https://www.corner.inc/place/1152090
+              - generic [ref=e893]: Corner
+              - generic [ref=e895]: M&L Szechuan Chinese - Dublin 1 ...
+          - generic [ref=e896] [cursor=pointer]:
+            - heading [level=3] [ref=e898]:
+              - button [ref=e900]:
+                - img [ref=e903]
+            - link [ref=e905]:
+              - /url: https://www.findmeglutenfree.com/biz/m-and-l/5107571838550016
+              - generic [ref=e910]: Find Me Gluten Free
+              - generic [ref=e912]: M&L Szechuan Chinese - Gluten-Free ...
+          - generic [ref=e913] [cursor=pointer]:
+            - heading [level=3] [ref=e915]:
+              - button [ref=e917]:
+                - img [ref=e920]
+            - link [ref=e922]:
+              - /url: https://www.tripadvisor.co.uk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e927]: Tripadvisor
+              - generic [ref=e929]: M&L CHINESE RESTAURANT, Dublin - 2026 ...
+          - generic [ref=e930] [cursor=pointer]:
+            - heading [level=3] [ref=e932]:
+              - button [ref=e934]:
+                - img [ref=e937]
+            - link [ref=e939]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e944]: HappyCow
+              - generic [ref=e946]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e947] [cursor=pointer]:
+            - heading [level=3] [ref=e949]:
+              - button [ref=e951]:
+                - img [ref=e954]
+            - link [ref=e956]:
+              - /url: https://www.diningindublin.ie/menus/m-l-chinese/
+              - generic [ref=e961]: Dining in Dublin Magazine
+              - generic [ref=e963]: M & L Chinese | Dining in Dublin Magazine
+          - generic [ref=e964] [cursor=pointer]:
+            - heading [level=3] [ref=e966]:
+              - button [ref=e968]:
+                - img [ref=e971]
+            - link [ref=e973]:
+              - /url: http://www.frenchfoodieindublin.com/2014/06/a-hidden-chinese-gem-m-l-cathedral.html
+              - generic [ref=e978]: French Foodie in Dublin
+              - generic [ref=e980]: Dublin Food ...
+          - generic [ref=e981] [cursor=pointer]:
+            - heading [level=3] [ref=e983]:
+              - button [ref=e985]:
+                - img [ref=e988]
+            - link [ref=e990]:
+              - /url: https://mlchineserestaurant.com/
+              - generic [ref=e995]: mlchineserestaurant.com
+              - generic [ref=e997]: M&L Chinese Restaurant – M&L Chinese ...
+          - generic [ref=e998] [cursor=pointer]:
+            - generic [ref=e999]:
+              - heading [level=3] [ref=e1000]:
+                - button [ref=e1002]:
+                  - img [ref=e1005]
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+            - link [ref=e1007]:
+              - /url: https://www.tiktok.com/@lovindublin/video/7059665534383639813
+              - generic [ref=e1012]: TikTok
+              - generic [ref=e1014]: Dublin's Top 5 Chinese Restaurants ...
+          - generic [ref=e1015] [cursor=pointer]:
+            - heading [level=3] [ref=e1017]:
+              - button [ref=e1019]:
+                - img [ref=e1022]
+            - link [ref=e1024]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e1029]: Yelp
+              - generic [ref=e1031]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e1032] [cursor=pointer]:
+            - heading [level=3] [ref=e1034]:
+              - button [ref=e1036]:
+                - img [ref=e1039]
+            - link [ref=e1041]:
+              - /url: https://mlchineserestaurant.com/
+              - generic [ref=e1046]: mlchineserestaurant.com
+              - generic [ref=e1048]: M&L Chinese Restaurant – M&L Chinese ...
+          - generic [ref=e1049] [cursor=pointer]:
+            - heading [level=3] [ref=e1051]:
+              - button [ref=e1053]:
+                - img [ref=e1056]
+            - link [ref=e1058]:
+              - /url: https://www.allthefood.ie/restaurants/m-and-l-chinese
+              - generic [ref=e1063]: All The Food
+              - generic [ref=e1065]: Dublin Restaurant Guides
+          - generic [ref=e1066] [cursor=pointer]:
+            - heading [level=3] [ref=e1068]:
+              - button [ref=e1070]:
+                - img [ref=e1073]
+            - link [ref=e1075]:
+              - /url: https://www.tripadvisor.ie/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e1080]: Tripadvisor
+              - generic [ref=e1082]: M&L CHINESE RESTAURANT, Dublin - Menu ...
+          - generic [ref=e1083] [cursor=pointer]:
+            - heading [level=3] [ref=e1085]:
+              - button [ref=e1087]:
+                - img [ref=e1090]
+            - link [ref=e1092]:
+              - /url: https://www.instagram.com/mlchinese/
+              - generic [ref=e1097]: Instagram
+              - generic [ref=e1099]: M&L Chinese Restaurant (@mlchinese ...
+          - generic [ref=e1100] [cursor=pointer]:
+            - heading [level=3] [ref=e1102]:
+              - button [ref=e1104]:
+                - img [ref=e1107]
+            - link [ref=e1109]:
+              - /url: https://periodicadventures.com/5-local-recommended-restaurants-in-dublin/
+              - generic [ref=e1114]: Periodic Adventures
+              - generic [ref=e1116]: 5 Local Recommended Restaurants in Dublin
+          - generic [ref=e1117] [cursor=pointer]:
+            - heading [level=3] [ref=e1119]:
+              - button [ref=e1121]:
+                - img [ref=e1124]
+            - link [ref=e1126]:
+              - /url: https://www.dublintown.ie/business/ml-chinese/
+              - generic [ref=e1131]: DublinTown
+              - generic [ref=e1133]: M&L Chinese - Dublin Town
+          - generic [ref=e1134] [cursor=pointer]:
+            - heading [level=3] [ref=e1136]:
+              - button [ref=e1138]:
+                - img [ref=e1141]
+            - link [ref=e1143]:
+              - /url: https://deliveroo.ie/menu/dublin/mountjoy-square-park/m-and-l-szechuan-chinese-restaurant
+              - generic [ref=e1148]: Deliveroo
+              - generic [ref=e1150]: M&L Szechuan Chinese Restaurant ...
+          - generic [ref=e1151] [cursor=pointer]:
+            - heading [level=3] [ref=e1153]:
+              - button [ref=e1155]:
+                - img [ref=e1158]
+            - link [ref=e1160]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e1165]: Yelp
+              - generic [ref=e1167]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e1168] [cursor=pointer]:
+            - heading [level=3] [ref=e1170]:
+              - button [ref=e1172]:
+                - img [ref=e1175]
+            - link [ref=e1177]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e1182]: HappyCow
+              - generic [ref=e1184]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e1185] [cursor=pointer]:
+            - heading [level=3] [ref=e1187]:
+              - button [ref=e1189]:
+                - img [ref=e1192]
+            - link [ref=e1194]:
+              - /url: https://ml-szechuan-chinese.weeblyte.com/
+              - generic [ref=e1199]: Weeblyte
+              - generic [ref=e1201]: M&L Szechuan Chinese - Sichuan ...
+          - generic [ref=e1202] [cursor=pointer]:
+            - heading [level=3] [ref=e1204]:
+              - button [ref=e1206]:
+                - img [ref=e1209]
+            - link [ref=e1211]:
+              - /url: https://irish-pages.ie/listing/ireland/dublin/sichuan-restaurant/m-l-szechuan-chinese
+              - generic [ref=e1216]: Irish-pages.ie
+              - generic [ref=e1218]: M&L Szechuan Chinese | Sichuan ...
+          - generic [ref=e1219] [cursor=pointer]:
+            - heading [level=3] [ref=e1221]:
+              - button [ref=e1223]:
+                - img [ref=e1226]
+            - link [ref=e1228]:
+              - /url: https://www.tripadvisor.co.uk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e1233]: Tripadvisor
+              - generic [ref=e1235]: M&L CHINESE RESTAURANT, Dublin - 2026 ...
+          - generic [ref=e1236] [cursor=pointer]:
+            - heading [level=3] [ref=e1238]:
+              - button [ref=e1240]:
+                - img [ref=e1243]
+            - link [ref=e1245]:
+              - /url: https://en.uhomes.com/blog/dublin-best-chinese-restaurants-and-supermarkets
+              - generic [ref=e1250]: uhomes.com
+              - generic [ref=e1252]: Chinese Restaurants and Supermarkets ...
+          - generic [ref=e1253] [cursor=pointer]:
+            - heading [level=3] [ref=e1255]:
+              - button [ref=e1257]:
+                - img [ref=e1260]
+            - link [ref=e1262]:
+              - /url: http://www.stitchandbear.com/2013/04/review-m-szechaun-restaurant-cathedral.html
+              - generic [ref=e1267]: Stitch and Bear
+              - generic [ref=e1269]: M&L Szechaun Restaurant, Cathedral ...
+          - generic [ref=e1270] [cursor=pointer]:
+            - heading [level=3] [ref=e1272]:
+              - button [ref=e1274]:
+                - img [ref=e1277]
+            - link [ref=e1279]:
+              - /url: https://www.mapquest.com/ie/ml-chinese-restaurant-527383032
+              - generic [ref=e1284]: MapQuest
+              - generic [ref=e1286]: M&L Chinese Restaurant, 13/14 Cathedral ...
+          - generic [ref=e1287] [cursor=pointer]:
+            - heading [level=3] [ref=e1289]:
+              - button [ref=e1291]:
+                - img [ref=e1294]
+            - link [ref=e1296]:
+              - /url: https://www.corner.inc/place/1152090
+              - generic [ref=e1301]: Corner
+              - generic [ref=e1303]: M&L Szechuan Chinese - Dublin 1 ...
+          - generic [ref=e1304] [cursor=pointer]:
+            - heading [level=3] [ref=e1306]:
+              - button [ref=e1308]:
+                - img [ref=e1311]
+            - link [ref=e1313]:
+              - /url: https://www.irishtimes.com/food/restaurants/review/2025/06/26/king-skewer-restaurant-review-get-your-hands-gloriously-dirty-as-you-gnaw-on-chicken-feet-and-bite-down-on-duck-tongue/
+              - generic [ref=e1318]: The Irish Times
+              - generic [ref=e1320]: "King Skewer restaurant review: A ..."
+          - generic [ref=e1321] [cursor=pointer]:
+            - heading [level=3] [ref=e1323]:
+              - button [ref=e1325]:
+                - img [ref=e1328]
+            - link [ref=e1330]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e1335]: Yelp
+              - generic [ref=e1337]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e1338] [cursor=pointer]:
+            - heading [level=3] [ref=e1340]:
+              - button [ref=e1342]:
+                - img [ref=e1345]
+            - link [ref=e1347]:
+              - /url: https://www.findmeglutenfree.com/biz/m-and-l/5107571838550016
+              - generic [ref=e1352]: Find Me Gluten Free
+              - generic [ref=e1354]: M&L Szechuan Chinese - Gluten-Free ...
+          - generic [ref=e1355] [cursor=pointer]:
+            - heading [level=3] [ref=e1357]:
+              - button [ref=e1359]:
+                - img [ref=e1362]
+            - link [ref=e1364]:
+              - /url: https://www.instagram.com/mlchinese/
+              - generic [ref=e1369]: Instagram
+              - generic [ref=e1371]: M&L Chinese Restaurant (@mlchinese ...
+          - generic [ref=e1372] [cursor=pointer]:
+            - heading [level=3] [ref=e1374]:
+              - button [ref=e1376]:
+                - img [ref=e1379]
+            - link [ref=e1381]:
+              - /url: https://ginandgriddle.wordpress.com/2014/08/10/review-ml-chinese-restaurant-dublin-1/
+              - generic [ref=e1386]: Gin & Griddle - WordPress.com
+              - generic [ref=e1388]: Review ~ M&L Chinese Restaurant, Dublin ...
+          - generic [ref=e1389] [cursor=pointer]:
+            - heading [level=3] [ref=e1391]:
+              - button [ref=e1393]:
+                - img [ref=e1396]
+            - link [ref=e1398]:
+              - /url: https://mlchineserestaurant.com/
+              - generic [ref=e1403]: mlchineserestaurant.com
+              - generic [ref=e1405]: M&L Chinese Restaurant – M&L Chinese ...
+          - generic [ref=e1406] [cursor=pointer]:
+            - heading [level=3] [ref=e1408]:
+              - button [ref=e1410]:
+                - img [ref=e1413]
+            - link [ref=e1415]:
+              - /url: https://www.facebook.com/mlchineserestaurant/?locale=el_GR
+              - generic [ref=e1420]: Facebook
+              - generic [ref=e1422]: M&L Chinese Restaurant | Dublin
+          - generic [ref=e1423] [cursor=pointer]:
+            - heading [level=3] [ref=e1425]:
+              - button [ref=e1427]:
+                - img [ref=e1430]
+            - link [ref=e1432]:
+              - /url: https://www.sluurpy.com/en/dublin/restaurant/6236637/mandl-chinese-restaurant
+              - generic [ref=e1437]: Sluurpy
+              - generic [ref=e1439]: M&l Chinese Restaurant in Dublin - Menu ...
+          - generic [ref=e1440] [cursor=pointer]:
+            - heading [level=3] [ref=e1442]:
+              - button [ref=e1444]:
+                - img [ref=e1447]
+            - link [ref=e1449]:
+              - /url: https://www.diningindublin.ie/ml-chinese-restaurant-reopens-for-outdoor-dining/
+              - generic [ref=e1454]: Dining in Dublin Magazine
+              - generic [ref=e1456]: M&L Chinese Restaurant reopens for ...
+          - generic [ref=e1457] [cursor=pointer]:
+            - heading [level=3] [ref=e1459]:
+              - button [ref=e1461]:
+                - img [ref=e1464]
+            - link [ref=e1466]:
+              - /url: https://www.tripadvisor.co.uk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e1471]: Tripadvisor
+              - generic [ref=e1473]: M&L CHINESE RESTAURANT, Dublin - 2026 ...
+          - generic [ref=e1474] [cursor=pointer]:
+            - heading [level=3] [ref=e1476]:
+              - button [ref=e1478]:
+                - img [ref=e1481]
+            - link [ref=e1483]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e1488]: HappyCow
+              - generic [ref=e1490]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e1491] [cursor=pointer]:
+            - heading [level=3] [ref=e1493]:
+              - button [ref=e1495]:
+                - img [ref=e1498]
+            - link [ref=e1500]:
+              - /url: https://www.sluurpy.com/en/dublin/restaurant/6236637/mandl-chinese-restaurant
+              - generic [ref=e1505]: Sluurpy
+              - generic [ref=e1507]: M&l Chinese Restaurant in Dublin - Menu ...
+          - generic [ref=e1508] [cursor=pointer]:
+            - heading [level=3] [ref=e1510]:
+              - button [ref=e1512]:
+                - img [ref=e1515]
+            - link [ref=e1517]:
+              - /url: http://www.stitchandbear.com/2013/04/review-m-szechaun-restaurant-cathedral.html
+              - generic [ref=e1522]: Stitch and Bear
+              - generic [ref=e1524]: M&L Szechaun Restaurant, Cathedral ...
+          - generic [ref=e1525] [cursor=pointer]:
+            - heading [level=3] [ref=e1527]:
+              - button [ref=e1529]:
+                - img [ref=e1532]
+            - link [ref=e1534]:
+              - /url: https://mlchineserestaurant.com/
+              - generic [ref=e1539]: mlchineserestaurant.com
+              - generic [ref=e1541]: M&L Chinese Restaurant – M&L Chinese ...
+          - generic [ref=e1542] [cursor=pointer]:
+            - heading [level=3] [ref=e1544]:
+              - button [ref=e1546]:
+                - img [ref=e1549]
+            - link [ref=e1551]:
+              - /url: https://excellentstreetimages.com/2024PhotoBlog/tag/new-chinese-restaurant/
+              - generic [ref=e1556]: excellentstreetimages.com
+              - generic [ref=e1558]: New Chinese Restaurant Archives ...
+          - generic [ref=e1559] [cursor=pointer]:
+            - heading [level=3] [ref=e1561]:
+              - button [ref=e1563]:
+                - img [ref=e1566]
+            - link [ref=e1568]:
+              - /url: https://www.corner.inc/place/1152090
+              - generic [ref=e1573]: Corner
+              - generic [ref=e1575]: M&L Szechuan Chinese - Dublin 1 ...
+          - generic [ref=e1576] [cursor=pointer]:
+            - heading [level=3] [ref=e1578]:
+              - button [ref=e1580]:
+                - img [ref=e1583]
+            - link [ref=e1585]:
+              - /url: https://www.allthefood.ie/reviews/m-and-l-chinese
+              - generic [ref=e1590]: All The Food
+              - generic [ref=e1592]: "M and L Chinese | All the Food: Dublin ..."
+          - generic [ref=e1593] [cursor=pointer]:
+            - heading [level=3] [ref=e1595]:
+              - button [ref=e1597]:
+                - img [ref=e1600]
+            - link [ref=e1602]:
+              - /url: https://www.irishtimes.com/food/restaurants/review/2025/06/26/king-skewer-restaurant-review-get-your-hands-gloriously-dirty-as-you-gnaw-on-chicken-feet-and-bite-down-on-duck-tongue/
+              - generic [ref=e1607]: The Irish Times
+              - generic [ref=e1609]: "King Skewer restaurant review: A ..."
+          - generic [ref=e1610] [cursor=pointer]:
+            - heading [level=3] [ref=e1612]:
+              - button [ref=e1614]:
+                - img [ref=e1617]
+            - link [ref=e1619]:
+              - /url: https://www.facebook.com/mlchineserestaurant/photos/
+              - generic [ref=e1624]: Facebook
+              - generic [ref=e1626]: M&L Chinese Restaurant ...
+          - generic [ref=e1627] [cursor=pointer]:
+            - heading [level=3] [ref=e1629]:
+              - button [ref=e1631]:
+                - img [ref=e1634]
+            - link [ref=e1636]:
+              - /url: https://www.theirishroadtrip.com/best-chinese-in-dublin/
+              - generic [ref=e1641]: The Irish Road Trip
+              - generic [ref=e1643]: 8 Best Chinese Restaurants in Dublin ...
+          - generic [ref=e1644] [cursor=pointer]:
+            - generic [ref=e1645]:
+              - heading [level=3] [ref=e1646]:
+                - button [ref=e1648]:
+                  - img [ref=e1651]
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+            - link [ref=e1653]:
+              - /url: https://www.tiktok.com/@marcusolaoire/video/7422748141256002819
+              - generic [ref=e1658]: TikTok
+              - generic [ref=e1660]: Chinese BBQ Spot in Dublin ...
+          - generic [ref=e1661] [cursor=pointer]:
+            - heading [level=3] [ref=e1663]:
+              - button [ref=e1665]:
+                - img [ref=e1668]
+            - link [ref=e1670]:
+              - /url: https://secretdublin.com/chinese-restaurants-dublin/
+              - generic [ref=e1675]: Secret Dublin
+              - generic [ref=e1677]: Rated Chinese Restaurants In Dublin ...
+          - generic [ref=e1678] [cursor=pointer]:
+            - heading [level=3] [ref=e1680]:
+              - button [ref=e1682]:
+                - img [ref=e1685]
+            - link [ref=e1687]:
+              - /url: https://www.instagram.com/mlchinese/
+              - generic [ref=e1692]: Instagram
+              - generic [ref=e1694]: M&L Chinese Restaurant (@mlchinese ...
+          - generic [ref=e1695] [cursor=pointer]:
+            - heading [level=3] [ref=e1697]:
+              - button [ref=e1699]:
+                - img [ref=e1702]
+            - link [ref=e1704]:
+              - /url: http://www.frenchfoodieindublin.com/2014/06/a-hidden-chinese-gem-m-l-cathedral.html
+              - generic [ref=e1709]: French Foodie in Dublin
+              - generic [ref=e1711]: Dublin Food ...
+          - generic [ref=e1712] [cursor=pointer]:
+            - heading [level=3] [ref=e1714]:
+              - button [ref=e1716]:
+                - img [ref=e1719]
+            - link [ref=e1721]:
+              - /url: https://excellentstreetimages.com/2024PhotoBlog/tag/new-chinese-restaurant/
+              - generic [ref=e1726]: excellentstreetimages.com
+              - generic [ref=e1728]: New Chinese Restaurant Archives ...
+          - generic [ref=e1729] [cursor=pointer]:
+            - heading [level=3] [ref=e1731]:
+              - button [ref=e1733]:
+                - img [ref=e1736]
+            - link [ref=e1738]:
+              - /url: https://m.yelp.com/biz/m-and-l-chinese-restaurant-dublin
+              - generic [ref=e1743]: Yelp
+              - generic [ref=e1745]: M&L CHINESE RESTAURANT - Updated March ...
+          - generic [ref=e1746] [cursor=pointer]:
+            - heading [level=3] [ref=e1748]:
+              - button [ref=e1750]:
+                - img [ref=e1753]
+            - link [ref=e1755]:
+              - /url: https://mapstr.com/place/W0ornuqxi1g/m-l-szechuan-chinese-restaurant-dublin-1-restaurant-chinese-ristorante-chinois-15
+              - generic [ref=e1760]: Mapstr
+              - generic [ref=e1762]: Szechuan Chinese Restaurant Dublin ...
+          - generic [ref=e1763] [cursor=pointer]:
+            - heading [level=3] [ref=e1765]:
+              - button [ref=e1767]:
+                - img [ref=e1770]
+            - link [ref=e1772]:
+              - /url: https://www.thetaste.ie/our-favourite-restaurants-for-dim-sum-in-dublin
+              - generic [ref=e1777]: TheTaste.ie
+              - generic [ref=e1779]: Dim Sum in Dublin
+          - generic [ref=e1780] [cursor=pointer]:
+            - heading [level=3] [ref=e1782]:
+              - button [ref=e1784]:
+                - img [ref=e1787]
+            - link [ref=e1789]:
+              - /url: https://www.irishexaminer.com/food/arid-20417920.html
+              - generic [ref=e1794]: Irish Examiner
+              - generic [ref=e1796]: Old Town Chinese Restaurant, Dublin ...
+          - generic [ref=e1797] [cursor=pointer]:
+            - heading [level=3] [ref=e1799]:
+              - button [ref=e1801]:
+                - img [ref=e1804]
+            - link [ref=e1806]:
+              - /url: https://www.happycow.net/reviews/m-and-l-chinese-dublin-193835
+              - generic [ref=e1811]: HappyCow
+              - generic [ref=e1813]: M&L Chinese - Dublin Restaurant - HappyCow
+          - generic [ref=e1814] [cursor=pointer]:
+            - heading [level=3] [ref=e1816]:
+              - button [ref=e1818]:
+                - img [ref=e1821]
+            - link [ref=e1823]:
+              - /url: https://www.dublininquirer.com/on-cathedral-street-a-workshop-for-dumpling-lovers/
+              - generic [ref=e1828]: Dublin InQuirer
+              - generic [ref=e1830]: Workshop for Dumpling Lovers ...
+          - generic [ref=e1831] [cursor=pointer]:
+            - heading [level=3] [ref=e1833]:
+              - button [ref=e1835]:
+                - img [ref=e1838]
+            - link [ref=e1840]:
+              - /url: https://www.tripadvisor.co.uk/Restaurant_Review-g186605-d3543446-Reviews-M_L_Chinese_Restaurant-Dublin_County_Dublin.html
+              - generic [ref=e1845]: Tripadvisor
+              - generic [ref=e1847]: M&L CHINESE RESTAURANT, Dublin - 2026 ...
+          - generic [ref=e1848] [cursor=pointer]:
+            - heading [level=3] [ref=e1850]:
+              - button [ref=e1852]:
+                - img [ref=e1855]
+            - link [ref=e1857]:
+              - /url: https://en.uhomes.com/blog/dublin-best-chinese-restaurants-and-supermarkets
+              - generic [ref=e1862]: uhomes.com
+              - generic [ref=e1864]: Chinese Restaurants and Supermarkets ...
+          - generic [ref=e1865] [cursor=pointer]:
+            - heading [level=3] [ref=e1867]:
+              - button [ref=e1869]:
+                - img [ref=e1872]
+            - link [ref=e1874]:
+              - /url: https://www.heydublin.ie/best-chinese-restaurants-dublin
+              - generic [ref=e1879]: Hey Dublin
+              - generic [ref=e1881]: Best Chinese Restaurants In Dublin 2026 ...
+          - generic [ref=e1882] [cursor=pointer]:
+            - heading [level=3] [ref=e1884]:
+              - button [ref=e1886]:
+                - img [ref=e1889]
+            - link [ref=e1891]:
+              - /url: https://www.allthefood.ie/reviews/m-and-l-chinese
+              - generic [ref=e1896]: All The Food
+              - generic [ref=e1898]: "M and L Chinese | All the Food: Dublin ..."
+        - generic [ref=e1901]:
+          - heading [level=1] [ref=e1902]: Page Navigation
+          - button [ref=e1903] [cursor=pointer]:
+            - generic [ref=e1904]:
+              - separator [ref=e1905]
+              - generic [ref=e1906]:
+                - generic [ref=e1907]: More results
+                - img [ref=e1909]
